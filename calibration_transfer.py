@@ -7,7 +7,7 @@ By MSc. José Vinícius Ribeiro (Londrina State University - Department of Physi
 General parameters:
 Xm = master spectrum (reference)
 Xs = source spectrum (to be used in training)
-Requires only numpy and sklearn (PLSRegressor, LinearRegressor, CCA)
+Requires only numpy and sklearn (PLSRegressor, LinearRegressor, CCA, PCA)
 """
 def SSC(Xm, Xs):
     """
@@ -185,7 +185,7 @@ def TTFA(Xm_cal, Xs_cal, ncomp=10, Xs_pred=None):
     """
     **Target Transformation Factor Analysis (TTFA)**
 
-    Credits to MSc. João Marcos Fávaro Lopes (State University of Londrina
+    Credits to MSc. João Marcos Fávaro Lopes (Londrina State University - Department of Physics)
     
     ----------
     Xm_cal : numpy.nparray
