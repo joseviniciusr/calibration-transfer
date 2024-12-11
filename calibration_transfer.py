@@ -1,19 +1,17 @@
 """"
-Biblioteca para realizar transferência de calibração
-Xm = espectro mester (referência)
-Xs = espectro slave (a ser utilizado no treinamento)
-Requer apenas numpy e sklearn (PLSRegressor, LinearRegressor, CCA)
+Calibration transfer library
+Xm = master spectrum (reference)
+Xs = source spectrum (to be used in training)
+Requires only numpy and sklearn (PLSRegressor, LinearRegressor, CCA)
 """
 def SSC(Xm, Xs):
     """
     **Spectral Subtraction Correction**
     ----------
-    Xm : numpy.ndarray <br
-        Espectro mestre <br>
-    Xs : numpy.ndarray <br>
-        Espectro slave <br>
-    ---------- <br>
-    Retorna o Xs transferido
+    Xm : numpy.ndarray
+    Xs : numpy.ndarray
+    ----------
+    Returns the transferred Xs
     """
     import numpy as np
     Xs_mean = Xs.mean(axis=0)
