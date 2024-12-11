@@ -1,7 +1,7 @@
 """"
 Calibration transfer python library
 
-By MSc. José Vinícius Ribeiro (State University of Londrina)
+By MSc. José Vinícius Ribeiro (Londrina State University - Department of Physics)
 
 ----------
 General parameters:
