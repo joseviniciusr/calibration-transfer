@@ -65,7 +65,7 @@ def PDS(Xm_cal, Xs_cal, Xs_pred, window_length=7, regType='pls', lv=1):
     
     Modelos = []
     for i in range(Xm_cal.shape[1]):
-        if i < window_length: #If verifica uma condição e executa um bloco de código se a condição for verdadeira.
+        if i < window_length:
             X2i = Xs_cal[:, :2 * window_length + 1]
 # Primeira Condição: Quando i é menor que window_length, significa que estamos nas primeiras i-variáveis
 # Não da para utilizar um intervalo simetrico ao redor de i        
